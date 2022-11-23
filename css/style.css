@@ -1,0 +1,152 @@
+body {
+  font-size: 14px;
+  color: #333;
+  background-color: #fff;
+  letter-spacing: 1px;
+  
+}
+*{
+  scroll-behavior: smooth;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.slides-container img{
+height: 100vh;
+width: 100vw;
+}
+.slides-navigation {
+  z-index: 6;
+}
+
+.titleMessage {
+  position: absolute;
+  width: 100%;
+  height: 250px;
+  top: 50%;
+  z-index: 5;
+  text-align: center;
+  margin-top: -125px;
+}
+
+.titleMessage .heading p {
+  color: #fff;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 100;
+  letter-spacing: 7px;
+}
+
+.titleMessage .heading .main {
+  font-size: 50px;
+}
+
+.titleMessage .heading .sub {
+  font-size: 23px;
+}
+
+.section {
+  background-color: rgb(27, 27, 27);
+  color: rgb(151, 150, 150);
+  padding: 100px 0;
+}
+
+.aboutImage {
+  max-width: 100%;
+}
+
+
+
+.contactSection {
+  background-color: rgba(205, 44, 12, 0.881);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contactSection input, .contactSection textarea, .contactSection button{
+  display: block;
+  text-align: center;
+  padding: 8px;
+  width: 20vw;
+  margin: 10px;
+
+}
+.contactSection .text-center{
+  width: auto;
+  border: 2PX solid black;
+  display: flex;
+  justify-content: center;
+}
+
+#navigation {
+  background-color: rgba(205, 44, 12, 0.881);
+  padding: 20px 10px;
+  z-index: 100;
+  width: 100%;
+  position:top;
+}
+
+#navigation li {
+  padding: 0 10px;
+}
+
+#navigation li a {
+  color: #fff;
+}
+
+#navigation li a:hover {
+  color: rgb(0, 57, 90);
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+  color: #000;
+}
+
+.navbar-toggler-icon {
+  background: url(../img/menu.png);
+  background-size: 100%;
+}
+
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
+
+/* ============ success Page =============== */
+.success{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message{
+  height: 20vh;
+  width: 40vh;
+  color: green;
+  text-align: center;
+
+}
+@media screen and (max-width: 480px) {
+  .contactSection .text-center{
+    width: auto;
+    border: 2PX solid rgb(198, 16, 16);
+    display: flex;
+    justify-content: center;
+  }
+  .contactSection input, .contactSection textarea, .contactSection button{
+    display: block;
+    text-align: center;
+    padding: 8px;
+    width: 80vw;
+    margin: 10px;
+  
+  }
+}
